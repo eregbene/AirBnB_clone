@@ -89,4 +89,3 @@ def do_deploy(archive_path):
                                                                                                                                                                                                     " | sort -r | tr '\\n' ' ' | cut -d ' ' -f{}-)".format(start + 1)
                                                                                                                                                                                                 ]
                                                                                                                                                                                             run(''.join(cmd_parts))
-
