@@ -1,14 +1,14 @@
 #!/usr/bin/python3
-""" State Module for HBNB project """
-from models.base_model import BaseModel, Base
-from models import storage_type
-from sqlalchemy import Column, String
+
+"""This file defines the Amenity Model
+It inherits from the BaseModel
+"""
+
+from models.base_model import BaseModel
 
 
-class Amenity(BaseModel, Base):
-    '''amenity class'''
-    __tablename__ = 'amenities'
-    if storage_type == 'db':
-        name = Column(String(128), nullable=False)
-    else:
-        name = ""
+class Amenity(BaseModel):
+    """The Amenity Model"""
+
+    # Attributes
+    name: str = ""
